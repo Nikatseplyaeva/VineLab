@@ -24,7 +24,7 @@ use app\models\Wine;
     <?php
     $items[0] = '$params';
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','title');
+    $items = ArrayHelper::map($Wine,'title','title');
     $params = [
         'prompt' => 'Выберите название...'
     ];
@@ -32,7 +32,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','rating');
+    $items = ArrayHelper::map($Wine,'rating','rating');
     $params = [
         'prompt' => 'Выберите рейтинг...'
     ];
@@ -40,7 +40,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','color');
+    $items = ArrayHelper::map($Wine,'color','color');
     $params = [
         'prompt' => 'Выберите цвет...'
     ];
@@ -48,7 +48,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','sweet');
+    $items = ArrayHelper::map($Wine,'sweet','sweet');
     $params = [
         'prompt' => 'Выберите вкус...'
     ];
@@ -56,7 +56,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','country');
+    $items = ArrayHelper::map($Wine,'country','country');
     $params = [
         'prompt' => 'Выберите страну...'
     ];
@@ -64,7 +64,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','type');
+    $items = ArrayHelper::map($Wine,'type','type');
     $params = [
         'prompt' => 'Выберите сорт...'
     ];
@@ -72,7 +72,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','degree');
+    $items = ArrayHelper::map($Wine,'degree','degree');
     $params = [
         'prompt' => 'Выберите градус...'
     ];
@@ -80,7 +80,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','after_taste');
+    $items = ArrayHelper::map($Wine,'after_taste','after_taste');
     $params = [
         'prompt' => 'Выберите послевкусие...'
     ];
@@ -88,7 +88,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','snack');
+    $items = ArrayHelper::map($Wine,'snack','snack');
     $params = [
         'prompt' => 'Выберите закуску...'
     ];
@@ -96,7 +96,7 @@ use app\models\Wine;
     ?>
     <?php
     $Wine = Wine::find()->all();
-    $items = ArrayHelper::map($Wine,'id','price');
+    $items = ArrayHelper::map($Wine,'price','price');
     $params = [
         'prompt' => 'Выберите цену...'
     ];
